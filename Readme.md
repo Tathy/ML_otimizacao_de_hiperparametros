@@ -10,6 +10,8 @@
 
 * O primeiro hiperparâmetro estudado foi o max_depth do algoritmo DecisionTree, que pode sofrer overfit caso seja muito alto.
 
+![graph_cross_validate_mean_scores](https://github.com/Tathy/ML_otimizacao_de_hiperparametros/blob/main/img/graph_cross_validate_mean_scores.png?raw=true)
+
 * O modelo fica "viciado" nos valores das features de treino e acaba classificando erroneamente as entradas de teste. 
 
 * Neste caso, a árvore que melhor classificou os dados foi a de profundidade máxima 3.
