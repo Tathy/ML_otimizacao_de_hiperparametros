@@ -39,5 +39,3 @@
 ## Referências
 
 Este projeto foi desenvolvido com referência no curso [Machine Learning parte 1: otimização de modelos através de hiperparâmetros](https://cursos.alura.com.br/course/machine-learning-otimizacao-de-modelos-atraves-de-hiperparametros).
-
-Teste renomeacao
