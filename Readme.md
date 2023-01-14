@@ -16,8 +16,26 @@
 
 * Neste caso, a árvore que melhor classificou os dados foi a de profundidade máxima 3.
 
+## Exploração de mais dimensões
+
+* A visualização de duas dimensões ainda é viável, mas a análise com três ou mais já se torna mais complicada.
+
+* Além disso, ainda há o aumento exponencial do tempo gasto, dependente do espaço de busca escolhido.
+
+## Simplificando o processo de busca
+
+* Para simplificar código escrito e melhorar a legibilidade, é utilizado o GridSearchCV.
+
+* Esta é uma busca exaustiva, então não há tanta economia de recurso em comparação com a busca "manual", feita com uma e duas dimensões anteriormente.
+
+* Depois de encontrar o melhor modelo indicado pelo GridSearch, ainda é necessário fazer mais uma validação cruzada, com um cálculo de uma margem de taxa de acerto. Esta segunda validação é chamada Nested Cross-Validation.
+
+## Conclusões
+
+* A busca utilizando grid é um processo demorado até se encontrar um bom resultado e não tem garantia de encotrar um modelo ótimo para um dado dataset.
+
+* Ainda existem otimizações e análises que podem ser feitas.
+
 ## Referências
 
 Este projeto foi desenvolvido com referência no curso [Machine Learning parte 1: otimização de modelos através de hiperparâmetros](https://cursos.alura.com.br/course/machine-learning-otimizacao-de-modelos-atraves-de-hiperparametros).
-
-:seedling:
