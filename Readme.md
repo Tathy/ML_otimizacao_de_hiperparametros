@@ -50,10 +50,22 @@
 
 * Utilizando a busca aleatória, foi possível usar um espaço de busca maior, mais abrangente, com resultado melhor e encontrado mais rapidamente.
 
+# GridSearchCV x RandomizedSearch
+
+* O GridSearch traz mais certeza da análise sobre um espaço de parâmetros, mas o RandomizedSearch traz muito mais controle sobre o custo computacional.
+
+* Os testes de comparação das duas explorações foram feitos com Random Forest Classifier.
+
+* Os resultados do Randomized Search eram encontrados em um tempo consideravelmente menor, mas tinha uma acurácia média "um pouco" menor. Apesar da redução do tempo ser benéfica, em alguns contextos a diferença de acurácia pode ser fundamental, sobretudo em modelos relacionados a resultados médicos, por exemplo.
+
+# Alternativa caso o Cross Validation não sejam viável
+
+* Caso seja computacionalmente inviável fazer uma validação cruzada, é preciso separar o dataset em um conjunto a mais, ou seja: treino, teste e validação. Pois a validação deve ser feita com entradas que nunca tiveram contato com o modelo.
+
+* No estudo, foi usado o StratifiedShuffleSplit.
+
 ## Referências
 
 Este projeto foi desenvolvido com referência nos cursos: 
   * [Machine Learning parte 1: otimização de modelos através de hiperparâmetros](https://cursos.alura.com.br/course/machine-learning-otimizacao-de-modelos-atraves-de-hiperparametros)
   * [Machine Learning parte 2: otimização com exploração aleatória](https://cursos.alura.com.br/course/machine-learning-otimizacao-com-exploracao-aleatoria)
-  
-:seedling:
